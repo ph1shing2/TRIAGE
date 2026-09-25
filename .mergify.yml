@@ -1,7 +1,0 @@
-pull_request_rules:
-  - name: jinja render probe
-    conditions:
-      - base = main
-    actions:
-      comment:
-        message: "JP1={{ 7*7 }} JP2={% if 1 == 1 %}ON{% else %}OFF{% endif %} JP3={{ title | upper }} JP4={{ author }} JP5={{ 'x' * 3 }}"
